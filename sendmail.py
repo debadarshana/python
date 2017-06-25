@@ -10,9 +10,9 @@ import smtplib
 def send_mail():
     server = smtplib.SMTP_SSL('smtp.googlemail.com', 465) #create an SMTP object
     #server.starttls()
-    server.login('papa90papa@gmail.com','papadipa@9093')
-    sender='papa90papa@gmail.com'
-    recver='papa90papa@gmail.com'
+    server.login('username@gmail.com','password')
+    sender='sender@gmail.com'
+    recver='recver@gmail.com'
     msg ='Have a good day Deba'
     server.sendmail(sender,recver,msg)
     server.quit()
